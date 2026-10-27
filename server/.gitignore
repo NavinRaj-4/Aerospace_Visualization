@@ -1,0 +1,20 @@
+node_modules/
+logs/
+*.log
+
+# Databases & local stores
+data/*.db
+data/*.sqlite*
+data/mongodb_store/
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!*.env.example
+
+.DS_Store
+Thumbs.db

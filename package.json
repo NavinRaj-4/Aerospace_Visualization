@@ -1,0 +1,13 @@
+{
+  "name": "aerospace-wind-tunnel-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aerospace Wind Tunnel & Aerodynamic Data Visualization Platform",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('node', ['server/server.js'], { stdio: 'inherit', shell: true }); spawn('npm', ['--prefix', 'client', 'run', 'dev'], { stdio: 'inherit', shell: true });\"",
+    "build": "npm --prefix client run build"
+  }
+}
